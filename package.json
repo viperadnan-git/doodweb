@@ -1,0 +1,63 @@
+{
+    "name": "doodstream-web",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@chakra-ui/react": "^2.8.0",
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "framer-motion": "^10.13.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-hot-toast": "^2.4.1",
+        "react-router-dom": "^6.14.2",
+        "react-scripts": "5.0.1",
+        "swr": "^2.2.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "eject": "react-scripts eject",
+        "test": "react-scripts test",
+        "build": "react-scripts build",
+        "pretty": "npx prettier . --ignore-path .gitignore --write",
+        "dev": "npx wrangler pages dev build",
+        "predeploy": "npm run pretty && npm run build",
+        "deploy": "npx wrangler pages deploy build"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "main": "src",
+    "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "wrangler": "^3.6.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/viperadnan-git/doodstream-web.git"
+    },
+    "keywords": [
+        "doodstream",
+        "doodstream-web"
+    ],
+    "author": "Adnan Ahmad <viperadnan@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/viperadnan-git/doodstream-web/issues"
+    }
+}
